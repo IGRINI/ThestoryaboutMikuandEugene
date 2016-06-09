@@ -1,0 +1,145 @@
+init python:
+
+    config.thumbnail_width = 318
+    config.thumbnail_height = 179
+    style.file_picker_ss_window.xpos = 0
+    style.file_picker_ss_window.ypos = 0
+    style.file_picker_text = Style(style.default)
+    style.file_picker_text.antialias = True
+    style.file_picker_text.font  = "fonts/calibri.ttf"
+    style.file_picker_text.color = "#bdbdbd"
+    style.file_picker_text.selected_color = "#ffffff"
+    style.file_picker_text.hover_color = "#ffffff"
+    style.file_picker_text.size = 24
+    style.file_picker_text.drop_shadow=(2, 2)
+    style.file_picker_text.drop_shadow_color = "#000"
+
+    style.save_load_button = Style(style.button)
+    style.save_load_button.background = get_image("gui/save_load/thumbnail_idle.png")
+    style.save_load_button.hover_background = get_image("gui/save_load/thumbnail_hover.png")
+    style.save_load_button.selected_background = get_image("gui/save_load/thumbnail_selected.png")
+    style.save_load_button.selected_hover_background = get_image("gui/save_load/thumbnail_selected.png")
+    style.save_load_button.selected_idle_background = get_image("gui/save_load/thumbnail_selected.png")
+
+    style.blank_button = Style(style.button)
+    style.blank_button.background = "images/misc/empty.png"
+    style.blank_button.hover_background = "images/misc/empty.png"
+    style.blank_button.selected_background = "images/misc/empty.png"
+    style.blank_button.selected_hover_background = "images/misc/empty.png"
+    style.blank_button.selected_idle_background = "images/misc/empty.png"
+
+    style.base_font = Style(style.default)
+    style.base_font.font  = "fonts/calibri.ttf"
+    style.base_font.size = 28
+    style.base_font.line_spacing = 2
+
+    style.settings_header = Style(style.base_font)
+    style.settings_header.font  = "fonts/corbel.ttf"
+    style.settings_header.size = 50
+    style.settings_header.color = "#4d2e19"
+    style.settings_header.hover_color = "#a27146"
+
+    style.settings_text = Style(style.settings_header)
+    style.settings_text.size = 36
+    style.settings_text.selected_color = "#4d2e19"
+    style.settings_text.hover_color = "#a27146"
+
+    style.settings_link = Style(style.base_font)
+    style.settings_link.font  = "fonts/gothic.ttf"
+    style.settings_link.size = 60
+    style.settings_link.kerning = 3
+    style.settings_link.color = "#909ca3"
+    style.settings_link.hover_color = "#ffffff"
+    style.settings_link.selected_color = "#909ca3"
+    style.settings_link.selected_idle_color = "#909ca3"
+    style.settings_link.selected_hover_color = "#ffffff"
+    style.settings_link.insensitive_color = "#909ca3"
+
+    style.hyperlink_text = Style(style.settings_link)
+    style.hyperlink_text.underline = True
+    style.hyperlink_text.hover_color = "#0ff"
+    style.hyperlink_text.idle_color = "#08f"
+
+    style.music_link = Style(style.settings_link)
+    style.music_link.insensitive_color = "#4f4f4f"
+    style.music_link.selected_color = "#ffffff"
+
+    style.sprite_menu = Style(style.settings_text)
+    style.sprite_menu.size = 37
+    style.sprite_menu.color = "#466123"
+    style.sprite_menu.selected_color = "#466123"
+    style.sprite_menu.hover_color = "#9dcd55"
+
+    style.say_dialogue = Style(style.base_font)
+    style.say_label = Style(style.base_font)
+    style.say_label.size = 28
+    style.say_label.drop_shadow=(2, 2)
+    style.say_label.drop_shadow_color = "#000"
+
+    style.chapter = Style(style.base_font)
+    style.chapter.font  = "fonts/corbel.ttf"
+    style.chapter.size = 120
+    style.chapter.color = "#fff"
+
+    style.chapter.outlines = [ (1, "#ffdd7d", 0, 0) ]
+
+    style.daynum = Style(style.chapter)
+    style.daynum.font  = "fonts/corbel.ttf"
+    style.daynum.size = 45
+
+    style.normal_day = Style(style.base_font)
+    style.normal_day.color = "#ffdd7d"
+    style.normal_day.drop_shadow=(2, 2)
+    style.normal_day.drop_shadow_color = "#000"
+    style.narrator_day = Style(style.normal_day)
+    style.narrator_day.italic = False
+    style.thoughts_day = Style(style.normal_day)
+    style.thoughts_day.bold = False
+
+    style.normal_sunset = Style(style.base_font)
+    style.normal_sunset.color = "#ffdd7d"
+    style.normal_sunset.drop_shadow=(2, 2)
+    style.normal_sunset.drop_shadow_color = "#000"
+    style.narrator_sunset = Style(style.normal_sunset)
+    style.narrator_sunset.italic = False
+    style.thoughts_sunset = Style(style.normal_sunset)
+    style.thoughts_sunset.bold = False
+
+    style.normal_night = Style(style.base_font)
+    style.normal_night.color = "#ffdd7d"
+    style.normal_night.drop_shadow=(2, 2)
+    style.normal_night.drop_shadow_color = "#000"
+    style.narrator_night = Style(style.normal_night)
+    style.narrator_night.italic = False
+    style.thoughts_night = Style(style.normal_night)
+    style.thoughts_night.bold = False
+
+    style.normal_prolog = Style(style.base_font)
+    style.normal_prolog.color = "#ffdd7d"
+    style.normal_prolog.drop_shadow=(2, 2)
+    style.normal_prolog.drop_shadow_color = "#000"
+    style.narrator_prolog = Style(style.normal_prolog)
+    style.narrator_prolog.italic = False
+    style.thoughts_prolog = Style(style.normal_prolog)
+    style.thoughts_prolog.bold = False
+
+    style.cards_button = Style(style.button)
+    style.cards_button.background = RoundRect("#000", False)
+    style.cards_button.hover_background = RoundRect("#555", False)
+    style.cards_button.insensitive_background = RoundRect("#404040", False)
+
+    style.cards_button_text = Style(style.button_text)
+    style.cards_button_text.color = "#FFF"
+    style.cards_button_text.selected_color = "#777"
+    style.cards_button_text.insensitive_color = "#c8c8c8"
+
+    style.log_button = Style(style.button)
+    style.log_button.child = None
+    style.log_button.focus_mask = None
+    style.log_button.background  = None
+
+    style.log_button_text = Style(style.normal_day)
+    style.log_button_text.selected_color = "#115bc0"
+    style.log_button_text.hover_color = "#115bc0"
+    style.log_button_text.selected_color = "#b6ff00"
+    style.log_button_text.hover_color = "#b6ff00"
